@@ -1,0 +1,213 @@
+/* Fondo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px; /* Más espacio a los lados */
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+    width: 80px; /* Aumentamos tamaño */
+    height: 80px;
+}
+
+.titulo {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.titulo h1 {
+    font-size: 32px; /* Más grande */
+    margin: 0;
+    color: #000;
+}
+
+.titulo p {
+    font-size: 18px; /* Un poco más grande */
+    margin: 5px 0 0 0;
+    color: #333;
+}
+
+.logo-tecnm {
+    width: 140px; /* Más grande aún */
+    height: auto;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: rgba(153, 76, 0, 0.9);
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 90%;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease; /* Animación suave en cualquier cambio */
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo más claro al pasar */
+    color: #000; /* Cambia el color del texto a negro */
+    transform: scale(1.1); /* Hace un ligero zoom (10% más grande) */
+}
+
+
+/* Área de contenido */
+main#contenido {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    border-radius: 20px;
+    min-height: 300px;
+}
+.ods {
+    margin-bottom: 40px;
+}
+
+.ods h4 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.ods p {
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+img {
+    display: block;
+    margin: 20px auto; /* Centra horizontalmente */
+  
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.cerrar {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+/* ===== Sección de Datos Personales ===== */
+.datos-personales {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.datos-personales h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 10px;
+}
+
+.datos-personales p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.datos-personales span {
+    font-weight: bold;
+    color: #2980b9;
+}
+/* ===== Sección de Datos Personales ===== */
+.datos-personales {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.datos-personales h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 10px;
+}
+
+.datos-personales p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.datos-personales span {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+

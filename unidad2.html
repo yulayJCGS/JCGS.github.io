@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción al Desarrollo Sustentable</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo de Reciclaje" class="logo">
+        </a>
+        <div class="titulo">
+            <h1>Desarrollo Sustentable</h1>
+        
+        </div>
+        <img src="img/logoTec.png" alt="Logo TecNM" class="logo-tecnm">
+    </header>
+
+    <nav>
+        <ul>
+          <li><a href="unidad1.html">Unidad 1</a></li>
+            <li><a href="unidad2.html">Unidad 2</a></li>
+            <li><a href="unidad3.html">Unidad 3</a></li>
+            <li><a href="unidad4.html">Unidad 4</a></li>
+            <li><a href="unidad5.html">Unidad 5</a></li>
+            <li><a href="index.html">Estudiante</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido">
+        <h2>Escenario natural</h2>
+        <p>Bienvenido, selecciona una unidad para ver su contenido.</p>
+       
+        <main id="contenido"> 
+            <h4>Video. Concientización del Medio Ambiente</h4>
+           
+            <div style="display: flex; justify-content: center;">
+                <blockquote class="tiktok-embed"
+                    cite="https://www.tiktok.com/@ari304131/video/7477850488277437701"
+                    data-video-id="7477850488277437701"
+                    style="max-width: 325px; min-width: 220px;">
+                  <section></section>
+                </blockquote>
+              </div>
+              <script async src="https://www.tiktok.com/embed.js"></script>
+              
+        </main>
+
+        <main id="contenido"> 
+            <h4>Tarea 1.Informe Brundtland </h4>
+            
+            <img src="imgUnidad2/informe.jpg" alt="Descripción de la imagen" width="300">
+        </main>
+
+         <main id="contenido"> 
+            <h4>Tarea 1.Informe Brundtland </h4>
+            <img src="imgUnidad2/Tormenta1.jpg" alt="Descripción de la imagen" width="300">
+            <img src="imgUnidad2/Tormenta2.jpg" alt="Descripción de la imagen" width="300">
+            <img src="imgUnidad2/Tormenta3.jpg" alt="Descripción de la imagen" width="300">
+        </main>
+
+        <main id="contenido"> 
+            <h4>Informe Brundtland </h4>
+            
+            <iframe src="imgUnidad2/INFORME BRUNDTLAND.pdf" width="100%" height="500px"></iframe>
+        </main>
+
+         <main id="contenido"> 
+            <h4>Apuntes</h4>
+            
+            <iframe src="imgUnidad2/Unidad 2 Desarrollo Sustentable A.pdf" width="100%" height="500px"></iframe>
+        </main>
+
+    </main>
+
+ <!-- Modal para mostrar imagen ampliada -->
+<div id="modalImagen" class="modal">
+    <span class="cerrar">&times;</span>
+    <img class="modal-contenido" id="imgAmpliada">
+</div>
+<script>
+    const modal = document.getElementById("modalImagen");
+    const imgAmpliada = document.getElementById("imgAmpliada");
+    const cerrar = document.querySelector(".cerrar");
+
+    document.querySelectorAll("img").forEach(img => {
+        img.addEventListener("click", () => {
+            imgAmpliada.src = img.src;
+            modal.style.display = "block";
+        });
+    });
+
+    cerrar.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>    
+</body>
+</html>

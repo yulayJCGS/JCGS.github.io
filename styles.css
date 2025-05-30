@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+    background-image: url('img/fondoPri.jpeg'); /* Aquí debes poner tu fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+.card span {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.card:hover span {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Ajuste para centrar la última imagen en la fila */
+.gallery .card:nth-child(5) {
+    grid-column: span 2;
+}
